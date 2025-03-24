@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Comment</title>
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">AF</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="comment.html">Post comment</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2 class="text-center">Leave a Comment</h2>
+    <form id="commentForm">
+        <div class="form-group">
+            <label for="userFirstName">First Name</label>
+            <input type="text" id="userFirstName" class="form-control" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+            <label for="userLastName">Last Name</label>
+            <input type="text" id="userLastName" class="form-control" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="userTopic">Select a Topic</label>
+            <select id="userTopic" class="form-control" required>
+                <option value="" disabled selected>Select a topic</option>
+                <!-- Add your topics here -->
+                <option value="Topic 1">Topic 1</option>
+                <option value="Topic 2">Topic 2</option>
+                <option value="Topic 3">Topic 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="userComment">Your Comment</label>
+            <textarea id="userComment" class="form-control" rows="4" placeholder="Enter your comment" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h3 class="text-center mt-5">Comments</h3>
+    <div id="commentsSection">
+        <!-- Comments will appear here -->
+    </div>
+</div>
+
+<script>
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get form values
+        const firstName = document.getElementById('userFirstName').value;
+        const lastName = document.getElementById('userLastName').value;
+        const email = document.getElementById('userEmail').value;
+        const topic = document.getElementById('userTopic').value;
+        const comment = document.getElementById('userComment').value;
+
+        // Generate comment HTML
+        const commentHTML = `
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">${firstName} ${lastName} (${email})</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Topic: ${topic}</h6>
+                    <p class="card-text">${comment}</p>
+                </div>
+            </div>
+        `;
+
+        // Add comment to the comments section
+        document.getElementById('commentsSection').insertAdjacentHTML('beforeend', commentHTML);
+
+        // Reset the form
+        this.reset();
+    });
+</script>
+</body>
+</html>
