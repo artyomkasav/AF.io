@@ -50,7 +50,7 @@ nav.navbar a.navbar-brand{
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3.26' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E") !important;
 }
-/* Trend Blocks */
+
 .container.trends {
     padding: 80px 20px;
     display: flex;
@@ -107,17 +107,17 @@ p {
 .gradient-bg {
 
     background: radial-gradient(circle,  
-        rgba(5, 10, 20, 1) 8%,    /* Темно-синий */
-        rgba(20, 5, 35, 1) 18%,   /* Глубокий фиолетовый */
-        rgba(30, 15, 60, 1) 35%,  /* Фиолетово-синий */
-        rgba(20, 10, 25, 1) 50%,  /* Темно-фиолетовый */
-        rgba(10, 5, 10, 1) 80%,   /* Почти черный */
-        rgba(0, 0, 0, 1) 100%     /* Черный */
+        rgba(5, 10, 20, 1) 8%,    
+        rgba(20, 5, 35, 1) 18%,   
+        rgba(30, 15, 60, 1) 35%,  
+        rgba(20, 10, 25, 1) 50%,  
+        rgba(10, 5, 10, 1) 80%,   
+        rgba(0, 0, 0, 1) 100%    
     ) !important;
 }
 
 .social-links {
-    gap: 30px; /* Измени на нужное расстояние */
+    gap: 30px; 
 }
 #main_head {
 	font-family: "Eagle Lake", sans-serif;
