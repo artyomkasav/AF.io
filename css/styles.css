@@ -57,13 +57,6 @@ input.form-control::placeholder {
 	font-family: "Eagle Lake", sans-serif;
 	font-size: 18px;
 }
-.ERDvid{
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	border-color: aliceblue;
-		
-}
 .form-group{
 color: #C2A9D9;
 font-family: "Eagle Lake", sans-serif;
@@ -77,10 +70,17 @@ font-size: 18px;
 
 .carousel-img {
     width: 100%;
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    object-fit: contain; /* Изображения не обрезаются, а подстраиваются */
-    max-height: 700px; /* Устанавливаем ограничение по высоте */
+    height: 70vh; /* Высота относительно экрана */
+    object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: auto; /* Автоматическая высота */
+        object-fit: contain; /* Показывает всю картинку без обрезки */
+    }
+}
+
 
 #main_head {
 	font-family: "Eagle Lake", sans-serif;
@@ -111,15 +111,17 @@ font-size: 18px;
     gap: 30px; /* Измени на нужное расстояние */
 }
 .video-container {
-    display: flex;
-    justify-content: center; /* Центрируем видео */
-    align-items: center;
     width: 100%;
+    max-width: 700px; /* Ограничение по размеру */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Центрирование */
+}
+.container {
+    margin-bottom: 40px; /* Отступ перед следующими элементами */
 }
 
-.video-container video {
-    max-width: 100%; /* Делаем адаптивным */
-    height: auto;
-}
+
+
 
 
