@@ -110,6 +110,16 @@ font-size: 18px;
 .social-links {
     gap: 30px; /* Измени на нужное расстояние */
 }
+.video-container {
+    display: flex;
+    justify-content: center; /* Центрируем видео */
+    align-items: center;
+    width: 100%;
+}
 
+.video-container video {
+    max-width: 100%; /* Делаем адаптивным */
+    height: auto;
+}
 
 
