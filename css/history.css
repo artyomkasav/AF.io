@@ -129,3 +129,27 @@ h3.metallic-text {
     font-size: 2rem;
     animation: metallic-glow 3s infinite linear;
 }
+#main_head {
+	font-family: "Eagle Lake", sans-serif;
+	color: #2B3C6C;
+}
+h3.blood-metallic-text {
+    background: linear-gradient(270deg, #8B0000, #FF0000, #8B0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+    animation: blood-metallic-glow 3s infinite linear;
+}
+h2.blood-metallic-text {
+    background: linear-gradient(270deg, #8B0000, #FF0000, #8B0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+    animation: blood-metallic-glow 3s infinite linear;
+}

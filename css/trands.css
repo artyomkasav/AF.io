@@ -45,15 +45,27 @@ nav.navbar a.navbar-brand{
 .gradient-bg {
 
     background: radial-gradient(circle,  
-        rgba(5, 10, 20, 1) 8%,    /* Темно-синий */
-        rgba(20, 5, 35, 1) 18%,   /* Глубокий фиолетовый */
-        rgba(30, 15, 60, 1) 35%,  /* Фиолетово-синий */
-        rgba(20, 10, 25, 1) 50%,  /* Темно-фиолетовый */
-        rgba(10, 5, 10, 1) 80%,   /* Почти черный */
-        rgba(0, 0, 0, 1) 100%     /* Черный */
+        rgba(5, 10, 20, 1) 8%,    
+        rgba(20, 5, 35, 1) 18%,   
+        rgba(30, 15, 60, 1) 35%,  
+        rgba(20, 10, 25, 1) 50%,  
+        rgba(10, 5, 10, 1) 80%,   
+        rgba(0, 0, 0, 1) 100%     
     ) !important;
 }
 
 .social-links {
-    gap: 30px; /* Измени на нужное расстояние */
+    gap: 30px; 
+}
+p {
+	color: #740001;
+}
+#main_head {
+	
+	font-family: "Eagle Lake", sans-serif;
+	color: #2B3C6C;
+}
+map, area {
+    display: block;
+    cursor: pointer;
 }

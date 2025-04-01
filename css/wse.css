@@ -1,7 +1,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color:  #7E69F4 !important;
-    color: #210C1E;
+     background: linear-gradient(180deg, #1e0033 0%, #330066 100%);
+    
 }
 
 /* Навигация */
@@ -42,3 +42,60 @@ nav.navbar a.navbar-brand{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFFFF' stroke-width='3.26' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E") !important;
 }
 
+#main_head {
+	
+	font-family: "Eagle Lake", sans-serif;
+	color: #2B3C6C;
+}p {
+	color: #740001;
+	font-weight: bold;
+}
+
+@keyframes blood-metallic-glow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h3.blood-metallic-text {
+    background: linear-gradient(270deg, #8B0000, #FF0000, #8B0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+    animation: blood-metallic-glow 3s infinite linear;
+}
+td{
+	color: antiquewhite;
+}
+.social-icon img {
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Анимация для кнопок */
+button, .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.gradient-bg {
+	border-radius: 15px;
+    background: radial-gradient(circle,  
+        rgba(5, 10, 20, 1) 8%,    /* Темно-синий */
+        rgba(20, 5, 35, 1) 18%,   /* Глубокий фиолетовый */
+        rgba(30, 15, 60, 1) 35%,  /* Фиолетово-синий */
+        rgba(20, 10, 25, 1) 50%,  /* Темно-фиолетовый */
+        rgba(10, 5, 10, 1) 80%,   /* Почти черный */
+        rgba(0, 0, 0, 1) 100%     /* Черный */
+    ) !important;
+}
