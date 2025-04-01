@@ -6,6 +6,10 @@
     <title>Fashion Trends</title>
     <link href="css/trands.css" rel="stylesheet">
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#"></a>
@@ -13,7 +17,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent1">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item"> <a class="nav-link" href="index.html">AF</a> </li>
-      <li class="nav-item"> <a class="nav-link active" href="trands.html">Fashion Trends</a> </li>
+      <li class="nav-item active"> <a class="nav-link active" href="trands.html">Fashion Trends</a> </li>
       <li class="nav-item"> <a class="nav-link" href="key-brands.html">Key Brands</a> </li>
       <li class="nav-item"> <a class="nav-link" href="history.html">History of Arhive fashion</a> </li>
       <li class="nav-item"> <a class="nav-link" href="wse.html">Why so expensive?</a> </li>
@@ -26,36 +30,64 @@
   </div>
 </nav>
    
-	 <div class="container my-5">
-        <h2 class="text-center mb-4">Key Brands in Fashion</h2>
+	 <div class="container mt-5 pt-5">
+    <h1 class="text-center mb-4"><span id="main_head">Fashion Trends</span></h1>
 
-        <div class="row">
-            <div class="col-md-6">
-                <img src="brand1.jpg" class="img-fluid rounded" alt="Brand 1">
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/oversize.png" class="img-fluid rounded" usemap="#oversize-map" alt="Oversized Silhouettes">
+			<map name="oversize-map">
+			<area target="_blank" alt="Vetements 16XL Hoodie" title="Vetements 16XL Hoodie" coords="57,86,523,397" shape="rect">
+
+			<area 
+				target="_blank" 
+				alt="Jeans" 
+				title="Vetements Blue printed jeans" 
+				href="https://www.mytheresa.com/at/en/women/vetements-printed-low-rise-wide-leg-jeans-blue-p00827143" 
+				coords="141,404,425,635" 
+				shape="rect">
+
+</map>
         </div>
-
-        <div class="row flex-md-row-reverse mt-5">
-            <div class="col-md-6">
-                <img src="brand2.jpg" class="img-fluid rounded" alt="Brand 2">
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <img src="brand3.jpg" class="img-fluid rounded" alt="Brand 3">
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <p>Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Faucibus a pellentesque sit amet porttitor.</p>
-            </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p><strong>Oversized Silhouettes</strong> – Layering, exaggerated proportions, and boxy cuts are at the forefront, influenced by modern high fashion. These styles create a bold, statement-making look that challenges traditional tailoring.</p>
         </div>
     </div>
+
+    <div class="row flex-md-row-reverse mt-5">
+        <div class="col-md-6">
+            <img src="images/blank.png" class="img-fluid rounded" alt="Minimalism and Rejection of Logomania">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p><strong>Minimalism and Rejection of Logomania</strong> – Clean lines, neutral tones, and subtle branding replace flashy logos. Modern fashion values quality craftsmanship and timeless designs over conspicuous branding.</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <img src="images/cyclinic.png" class="img-fluid rounded" usemap="#c-map" width="100%" alt="Fashion Cyclicity">
+
+			<map name="c-map">
+	
+    <area target="_blank" alt="Jaded London" title="Jaded London" href="https://jadedldn.com/en-ie?srsltid=AfmBOooWXwW-xC_eXwOcoGuBh_8UCZUVD0mvik9NMtwLUi60gcDHn25Z" coords="340,818,1561,2756" shape="rect">
+</map>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p><strong>Fashion Is Cyclical</strong> – Trends always return, often with a modern twist. Flared jeans, shearling jackets, and '70s cardigans are reappearing alongside '90s grunge elements, reshaped for contemporary wear.</p>
+        </div>
+    </div>
+
+    <div class="row flex-md-row-reverse mt-5">
+        <div class="col-md-6">
+            <img src="images/vintage.png" class="img-fluid rounded" alt="Vintage Aesthetic">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p><strong>Vintage Aesthetic</strong> – The rise of thrift shopping and vintage boutiques is shaping the fashion industry. Unique second-hand pieces not only promote sustainability but also offer a sense of individuality.</p>
+        </div>
+    </div>
+</div>
+
+	
 	<section class="container mt-4">
     <div class="row justify-content-end">
         <div class="col-sm-12 col-md-6 col-lg-4">
