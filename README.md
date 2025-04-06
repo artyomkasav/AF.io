@@ -30,7 +30,7 @@ The website consists of several HTML pages, including:
 
 ## 🔗 Live Site
 
-You can view the website live [here]([https://yourusername.github.io/your-repo-name](https://artyomkasav.github.io/AF.io/index.html))  
+You can view the website live ([https://artyomkasav.github.io/AF.io/index.html])
 
 ## 📷 Preview
 ![image](https://github.com/user-attachments/assets/e33477e7-9908-4334-93f1-770802c294fa)
