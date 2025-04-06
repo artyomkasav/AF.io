@@ -20,6 +20,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="index.html">AF<span class="sr-only">(current)</span></a> </li>
                 <li class="nav-item"><a class="nav-link" href="trands.html">Fashion Trends</a></li>
                 <li class="nav-item"><a class="nav-link" href="key-brands.html">Key Brands</a></li>
 				<li class="nav-item"><a class="nav-link" href="history.html">History of Archive Fashion</a></li>
@@ -31,6 +32,7 @@
     
     <div class="container mt-5">
 		<h2 class="text-center"><span id="main_head">Why is Archive Fashion So Expensive?</span></h2>
+		<h2  style="text-align: center"><a href="#music">♪ Music ♪</a></h2>
         
         <div class="row mt-4">
             <div class="col-lg-6">
@@ -62,6 +64,7 @@
             </div>
         </div>
     </div>
+	<!-- Table with Famous brands -->
     <div class="container mt-5">
         <h3 class="text-center blood-metallic-text">Top Expensive and Unique Brands</h3>
         <table class="table table-bordered text-center mt-4">
@@ -139,31 +142,96 @@
         </div>
     </div>
 	<section class="container mt-4">
-    <div class="row justify-content-end">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card text-center gradient-bg text-white p-3">
-                <h2 class="card-title">Contact Us</h2>
-                <div class="card-body">
-                    <div class="d-flex justify-content-center social-links">
-                        <a href="https://linkedin.com" target="_blank" class="social-icon">
-                            <img src="images/linkedin-icon.png" alt="LinkedIn" class="img-fluid" width="40">
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon">
-                            <img src="images/instagram-icon.png" alt="Instagram" class="img-fluid" width="40">
-                        </a>
-                        <a href="mailto:your-email@gmail.com" class="social-icon">
-                            <img src="images/gmail-icon.png" alt="Gmail" class="img-fluid" width="40">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="row align-items-center justify-content-center">
+    
+    <!-- Music player -->
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+      <div class="music-box gradient-bg text-white p-3 text-center" id="music">
+        <audio controls autoplay>
+          <source src="audio/2hollis_–_whiplash.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
+
+    <!-- Contact Us -->
+    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+      <div class="card text-center gradient-bg text-white p-3 w-100">
+        <h2 class="card-title">Contact Us</h2>
+        <div class="card-body">
+          <div class="d-flex justify-content-center social-links">
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <img src="images/linkedin-icon.png" alt="LinkedIn" class="img-fluid" width="40">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+              <img src="images/instagram-icon.png" alt="Instagram" class="img-fluid" width="40">
+            </a>
+            <a href="mailto:artamonsav@gmail.com" class="social-icon">
+              <img src="images/gmail-icon.png" alt="Gmail" class="img-fluid" width="40">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+
+
+<style>
+.gradient-bg {
+    background: radial-gradient(circle,  
+        rgba(5, 10, 20, 1) 8%,    
+        rgba(20, 5, 35, 1) 18%,   
+        rgba(30, 15, 60, 1) 35%,  
+        rgba(20, 10, 25, 1) 50%, 
+        rgba(10, 5, 10, 1) 80%,   
+        rgba(0, 0, 0, 1) 100%     
+    ) !important;
+}
+
+.social-links {
+    gap: 30px; 
+}
+
+.video-container {
+    width: 100%;
+    max-width: 700px; 
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.container {
+    margin-bottom: 40px; 
+}
+
+.music-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.social-icon img {
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+</style>
     
     <footer class="text-center mt-5">
-        <p>&copy; 2024 Archive Fashion. All rights reserved.</p>
-    </footer>
+    <p>&copy; 2024 Archive Fashion. All rights reserved.</p>
+</footer>
     
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
