@@ -34,6 +34,11 @@ You can view the website live [here](https://artyomkasav.github.io/AF.io/index.h
 
 ## 📷 Preview
 ![image](https://github.com/user-attachments/assets/e33477e7-9908-4334-93f1-770802c294fa)
+- Main Page
+![image](https://github.com/user-attachments/assets/7f8d0844-0955-4b47-85f7-37740a68bdb5)
+- Why so expensive?
+![image](https://github.com/user-attachments/assets/e71bf746-511d-463b-a08f-3c53dd83dcfa)
+- Key brands
 
 
 
