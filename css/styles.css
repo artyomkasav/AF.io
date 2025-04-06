@@ -64,20 +64,20 @@ font-weight: bold;
 font-size: 18px;
 }
 .carousel-inner {
-    max-width: 1200px; /* Ограничиваем ширину */
-    margin: 0 auto; /* Центрируем */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .carousel-img {
     width: 100%;
-    height: 70vh; /* Высота относительно экрана */
+    height: 70vh; 
     object-fit: cover;
 }
 
 @media (max-width: 768px) {
     .carousel-img {
-        height: auto; /* Автоматическая высота */
-        object-fit: contain; /* Показывает всю картинку без обрезки */
+        height: auto; 
+        object-fit: contain; 
     }
 }
 
@@ -85,6 +85,11 @@ font-size: 18px;
 #main_head {
 	font-family: "Eagle Lake", sans-serif;
 	color: #2B3C6C;
+}
+.main_head {
+	font-family: "Eagle Lake", sans-serif;
+	color: #2B3C6C;
+	text-align: center
 }
 #main_desc{
 	
@@ -95,33 +100,20 @@ font-size: 18px;
 	font-family: "Eagle Lake", sans-serif;
 	color: #2B3C6C; 
 }
-.gradient-bg {
 
-    background: radial-gradient(circle,  
-        rgba(5, 10, 20, 1) 8%,    /* Темно-синий */
-        rgba(20, 5, 35, 1) 18%,   /* Глубокий фиолетовый */
-        rgba(30, 15, 60, 1) 35%,  /* Фиолетово-синий */
-        rgba(20, 10, 25, 1) 50%,  /* Темно-фиолетовый */
-        rgba(10, 5, 10, 1) 80%,   /* Почти черный */
-        rgba(0, 0, 0, 1) 100%     /* Черный */
-    ) !important;
+.music-box {
+background-color: #f8f9fa;
+border-radius: 10px;
+padding: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
-.social-links {
-    gap: 30px; /* Измени на нужное расстояние */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+	font-style: oblique;
+	text-decoration: underline;
 }
-.video-container {
-    width: 100%;
-    max-width: 700px; /* Ограничение по размеру */
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto; /* Центрирование */
-}
-.container {
-    margin-bottom: 40px; /* Отступ перед следующими элементами */
-}
-
-
-
 
 

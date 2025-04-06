@@ -60,6 +60,12 @@ nav.navbar a.navbar-brand{
 p {
 	color: #740001;
 }
+dl {
+	color: #740001;
+}
+h3 {
+	color: #740001;
+}
 #main_head {
 	
 	font-family: "Eagle Lake", sans-serif;
@@ -68,4 +74,27 @@ p {
 map, area {
     display: block;
     cursor: pointer;
+}
+@keyframes blood-metallic-glow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h3.blood-metallic-text {
+    background: linear-gradient(270deg, #8B0000, #FF0000, #8B0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+    animation: blood-metallic-glow 3s infinite linear;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+	font-style: oblique;
 }
